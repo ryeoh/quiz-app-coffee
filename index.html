@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Coffee Quiz App</title>
+    <meta name="description" content="Test your coffee knowledge: how well do you know coffee?">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  </head>
+
+  <body>
+    <header role="banner">
+      <a href="index.html">
+        <img class="logo" src="https://image.flaticon.com/icons/svg/273/273048.svg" alt="coffee icon"/>
+      </a>
+
+      <div>
+        <p class="quizName">Coffee Quiz</p>
+      </div>
+
+      <div class="scoreKeeper">
+        <p>Score: <span class="score">0</span>/10</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="js-quizStart">
+        <h1>Think you know coffee?</h1>
+        <button type="button" class="js-startButton">Test your knowledge!</button>
+      </div>
+    </main>
+
+    <footer role="footer">
+       <div class="questionTracker">
+        <p>Question: <span class="questionNumber">0</span>/10</p>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

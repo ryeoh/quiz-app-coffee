@@ -1,0 +1,332 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Amatic SC';
+}
+
+html{
+  background-image: url("https://images.unsplash.com/photo-1493606278519-11aa9f86e40a?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  height: 150px;
+  padding: 20px 20px;
+}
+
+main {
+  width: 75%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  background: lightgrey;
+  opacity: .75;
+  border-radius: 8px;
+}
+
+div {
+  width: 100%;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  color: white;
+  font-size: 100px;
+  padding: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+h2 {
+  color: white;
+  font-size: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+legend {
+  color: white;
+  font-size: 50px;
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+h3 {
+  font-size: 35px;
+  margin: 0;
+}
+
+fieldset {
+  padding: 20px;
+  border: none;
+}
+
+button {
+  display: block;
+  height: 40px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  color: white;
+  background: black;
+  border: 1px black;
+  border-radius: 3px;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  font-size: 40px;
+}
+
+.logo {
+  height: 100px;
+  width: 100px
+  margin: 20px;
+}
+
+.quizName {
+  font-size: 40px;
+  text-align: left;
+  padding-left: 25px;
+}
+
+.scoreKeeper {
+  height: 150px;
+  text-align: right;
+  font-size: 40px;
+}
+
+.answerOption {
+  display: block;
+  padding: 15px;
+  margin: 5px;
+  text-align: left;
+  font-size: 35px;
+  width: 100%;
+  cursor: pointer;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border: 2px solid whitesmoke;
+  transition: 0.2s all linear;
+  outline: none;
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
+}
+
+input:checked {
+  border: 10px solid gray;
+}
+
+input[type=radio]:hover {
+  background-color: rgb(124, 124, 124);
+}
+
+button:hover, button:focus {
+  background-color: rgb(124, 124, 124);
+}
+
+.feedbackPicture{
+  width: auto;
+  max-width: 500px;
+  height: auto;
+  max-height: 300px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.correctFeedback > p {
+  font-family: 'Open Sans Condensed';
+}
+
+.wrongFeedback > p {
+  font-family: 'Open Sans Condensed';
+}
+
+.explanation {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 25px;
+}
+
+.quizEnd > p {
+  font-size: 35px;
+}
+
+@media screen and (max-height: 870px) {
+  html{
+    background-position: 65%;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  h2, legend {
+    padding: 10px;
+    font-size: 35px;
+    margin: 0;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  button {
+    width: 60%;
+    margin-top: 15px;
+    margin-bottom: 15px; 
+    font-size: 20px;
+  }
+  header {
+    display: block;
+    padding: 10px;
+  }
+  main {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 100%;
+    width: 95%;
+  }
+  fieldset {
+    padding: 5px;
+    height: 100%;
+  }
+  .logo {
+    height: 80px;
+    width: 80px;
+    display: block;
+    margin: auto;
+  }
+  .quizName{
+    font-size: 25px;
+    padding-left: 0;
+    margin: auto;
+    text-align: center;
+  }
+  .scoreKeeper > p {
+    margin: 0;
+    font-size: 25px;
+    text-align: center;
+  }
+  .questionTracker > p {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .explanation {
+    font-size: 15px;
+  }
+  .answerOption {
+    font-size: 20px;
+    padding: 5px;
+  }
+  .feedbackPicture{
+    width: auto;
+    max-width: 175px;
+    height: auto;
+    max-height: 175px;
+    padding-top: 15px;
+  }
+  .quizEnd > p {
+    font-size: 30px;
+    margin: auto;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  html{
+    background-position: 65%;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  h2, legend {
+    padding: 10px;
+    font-size: 35px;
+    margin: 0;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  button {
+    width: 60%;
+    margin-top: 15px;
+    margin-bottom: 15px; 
+    font-size: 20px;
+  }
+  header {
+    display: block;
+    padding: 10px;
+  }
+  main {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 100%;
+    width: 95%;
+  }
+  fieldset {
+    padding: 5px;
+    height: 100%;
+  }
+  .logo {
+    height: 80px;
+    width: 80px;
+    display: block;
+    margin: auto;
+  }
+  .quizName{
+    font-size: 25px;
+    padding-left: 0;
+    margin: auto;
+    text-align: center;
+  }
+  .scoreKeeper > p {
+    margin: 0;
+    font-size: 25px;
+    text-align: center;
+  }
+  .questionTracker > p {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .explanation {
+    font-size: 15px;
+  }
+  .answerOption {
+    font-size: 20px;
+    padding: 5px;
+  }
+  .feedbackPicture{
+    width: auto;
+    max-width: 175px;
+    height: auto;
+    max-height: 175px;
+    padding-top: 15px;
+  }
+  .quizEnd > p {
+    font-size: 30px;
+    margin: auto;
+    padding: 15px;
+  }
+}
