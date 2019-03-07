@@ -28,7 +28,7 @@ const STORE = [
   },
   
   {
-    question: 'Which country consumes the most amount of coffee',
+    question: 'Which country consumes the most amount of coffee?',
     answers: [
      'Finland',
      'Paris',
