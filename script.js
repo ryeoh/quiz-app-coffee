@@ -6,8 +6,8 @@ let score = 0;
 // Generate structure/form for each question page
 function generateQuestionForm(questionNumber, newQuestionNumber) {
   return `<div class="question">
-    <legend>${STORE[questionNumber].question}</legend>
-      <form>
+    <form>
+      <legend>${STORE[questionNumber].question}</legend>
         <fieldset>
           <label class="answerOption">
             <input type="radio" value="${STORE[questionNumber].answers[0]}" name="answer" required>
@@ -63,24 +63,6 @@ function checkAnswer() {
     }
   });
 }
-
-// function checkAnswer() {
-//   $(".js-submitButton").on("submit", function(event) {
-//     event.preventDefault();
-//     submittedAnswer();
-//    const answer = $("input:checked").siblings("span");
-//    let correctAnswer = `${STORE[questionNumber].correctAnswer}`;
-//    console.log(answer);
-//    if (answer === correctAnswer) {
-//      generateCorrectFeedback();
-//      updateScore();
-//    }
-//    else {
-//      generateWrongFeedback();
-//    }
-//   });
-//   console.log(`${STORE[questionNumber].correctAnswer}`);
-// }
 
 // based on if the answer chosen matches, triggers the generation of "correct" feedback page
 function generateCorrectFeedback() {

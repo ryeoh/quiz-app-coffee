@@ -18,9 +18,19 @@ header {
 }
 
 main {
-  width: 75%;
+  width: 80%;
   height: 100%;
   margin: auto;
+  background: lightgrey;
+  opacity: .75;
+  border-radius: 8px;
+}
+
+.js-quizStart {
+  width: 80%;
+  height: 100%;
+  margin: 10% auto;
+  padding: 5% 0;
   background: lightgrey;
   opacity: .75;
   border-radius: 8px;
@@ -41,6 +51,7 @@ h1 {
   padding: 20px;
   margin-top: auto;
   margin-bottom: auto;
+  text-shadow: 2px 2px gray;
 }
 
 h2 {
@@ -48,6 +59,7 @@ h2 {
   font-size: 50px;
   margin-top: 15px;
   margin-bottom: 15px;
+  text-shadow: 2px 2px gray;
 }
 
 legend {
@@ -56,6 +68,7 @@ legend {
   padding-top: 30px;
   padding-left: 10px;
   padding-right: 10px;
+  text-shadow: 2px 2px gray;
 }
 
 h3 {
@@ -85,11 +98,15 @@ button {
 
 footer {
   position: absolute;
-  bottom: 0;
   width: 100%;
+  bottom: 0;
   margin: auto;
   text-align: center;
   font-size: 40px;
+}
+
+.questionTracker > p {
+  margin: 15px auto;
 }
 
 .logo {
@@ -157,11 +174,11 @@ button:hover, button:focus {
 }
 
 .correctFeedback > p {
-  font-family: 'Open Sans Condensed';
+  font-family: 'Montserrat';
 }
 
 .wrongFeedback > p {
-  font-family: 'Open Sans Condensed';
+  font-family: 'Montserrat';
 }
 
 .explanation {
@@ -277,8 +294,7 @@ button:hover, button:focus {
     padding: 10px;
   }
   main {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10% auto;
     height: 100%;
     width: 95%;
   }
